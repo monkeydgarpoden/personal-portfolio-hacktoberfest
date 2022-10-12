@@ -1,78 +1,28 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;700&family=Poppins:ital,wght@0,200;0,300;0,400;1,100&display=swap');
 *{
-    margin: 0;
+    box-sizing:border-box;
     padding: 0;
-    box-sizing: border-box;
-    font-family: 'poppins',sans-serif;
+    margin: 0;
 }
-body
-{
-    background: #000;
-    min-height: 200vh;
-}
-header
-{
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
+body{
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    transition: 0.8;
-    padding: 40px 100px;
-    z-index: 1000;
-}
-header.sti
-{
-    padding: 5px 100px;
-    background: #fff;
-}
-header .logo
-{
-    position: relative;
-    font-weight: 700;
-    color:  #fff;
-    text-decoration:none;
-    font-size: 2em;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    transform: 0.8s;
-}
-header ul
-{
-    position: relative;
-    display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
+    height: 100vh;
 }
-header ul li
+.emoji
 {
-    position: relative;
-    list-style: none;
-  
+    font-size: 10rem;
+    cursor: auto;
+    user-select: none;
+    
 }
-
-header ul li a
-{
-    position: relative;
-    margin: 0 15px;
-    text-decoration: none;
-    color: #fff;
-    letter-spacing: 2px;
-    font-weight: 500px;
-    transition: 0.8s;
-
+.closed{
+    display: none;
 }
-.banner
-{
-    position: relative;
-    width: 100%;
-    height:100vh;
-    background: url(bg.png);
-    background-size: cover;
+.open{
+    display: none;
 }
-header.sti .logo,
-header.sti ul li a{
-    color: black;
+.active{
+    display: block;
 }
