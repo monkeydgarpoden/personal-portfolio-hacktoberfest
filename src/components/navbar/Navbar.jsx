@@ -19,6 +19,7 @@ export const Navbar = () => {
 
     useEffect(() => {
         showButton()
+        // eslint-disable-next-line react-hooks/exhaustive-deps
     },[])
 
     window.addEventListener('resize', showButton)
