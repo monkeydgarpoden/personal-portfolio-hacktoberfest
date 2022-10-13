@@ -8,7 +8,7 @@ export const Navbar = () => {
 
     const handleClick = () => setClick(!click)
     const closeMobileMenu = () => setClick(false)
-
+    // eslint-disable-next-line no-unused-vars
     const showButton = () => {
         if(window.innerWidth <= 960){
             setButton(false)
