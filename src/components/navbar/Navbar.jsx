@@ -4,7 +4,7 @@ import './Navbar.css'
 
 export const Navbar = () => {
     const [click,setClick] = useState(false)
-    const [setButton] = useState(true)
+    const [button,setButton] = useState(true)
 
     const handleClick = () => setClick(!click)
     const closeMobileMenu = () => setClick(false)
@@ -19,7 +19,7 @@ export const Navbar = () => {
 
     useEffect(() => {
         showButton()
-        // eslint-disable-next-line react-hooks/exhaustive-deps
+        
     },[])
 
     window.addEventListener('resize', showButton)
