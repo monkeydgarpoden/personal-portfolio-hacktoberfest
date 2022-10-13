@@ -1,14 +1,14 @@
 import React, {useState,useEffect} from 'react'
 import { Link } from 'react-router-dom'
 import './Navbar.css'
-// eslint-disable-next-line no-unused-vars
+
 export const Navbar = () => {
     const [click,setClick] = useState(false)
     const [button,setButton] = useState(true)
 
     const handleClick = () => setClick(!click)
     const closeMobileMenu = () => setClick(false)
-
+    // eslint-disable-next-line no-unused-vars
     const showButton = () => {
         if(window.innerWidth <= 960){
             setButton(false)
